@@ -1,0 +1,2718 @@
+{
+  "schema_version": 1,
+  "design": {
+    "experiment": "liars-dice-factorial-construct-recovery",
+    "families": [
+      "family-a",
+      "family-b"
+    ],
+    "replicates": 8,
+    "rounds_per_order": 250,
+    "base_seed": 44001,
+    "seed_stride": 10000,
+    "fresh_relative_to_balance_and_mechanism_seeds": true,
+    "factorial_weights": {
+      "low": 0.1,
+      "high": 0.3
+    },
+    "neutral_baseline_gets_remainder": true,
+    "opener_alternates": true,
+    "seat_order_balanced": true,
+    "policies_modified": false,
+    "hidden_weights_used_for_scoring": false,
+    "shuffle_repetitions": 100
+  },
+  "candidate_observables": {
+    "pressure": "public commitment/escalation score",
+    "control": "conditional mutual information between public opponent-profile regime and action, controlling for current-bid truth-probability bin",
+    "chaos": "public-state-conditioned action entropy multiplied by an independent aggregate performance-adequacy floor"
+  },
+  "prespecified_thresholds": {
+    "minimum_matching_standardized_effect": 0.5,
+    "minimum_discriminant_margin": 0.2,
+    "matching_effect_must_exceed_shuffled_95th_percentile": true
+  },
+  "families": {
+    "family-a": {
+      "effects": {
+        "pressure": {
+          "standardized_effect_by_assigned_axis": {
+            "pressure": 1.6716474633191993,
+            "control": -0.05385134882073864,
+            "chaos": 1.0241480249914225
+          },
+          "matching_effect": 1.6716474633191993,
+          "largest_absolute_cross_effect": 1.0241480249914225,
+          "discriminant_margin": 0.6474994383277768,
+          "shuffled_matching_effect_95th_percentile": 0.46582844320579714
+        },
+        "control": {
+          "standardized_effect_by_assigned_axis": {
+            "pressure": -0.6398987431858659,
+            "control": -0.21495728422929516,
+            "chaos": 0.6612783000287232
+          },
+          "matching_effect": -0.21495728422929516,
+          "largest_absolute_cross_effect": 0.6612783000287232,
+          "discriminant_margin": -0.8762355842580184,
+          "shuffled_matching_effect_95th_percentile": 0.3549643374027341
+        },
+        "chaos": {
+          "standardized_effect_by_assigned_axis": {
+            "pressure": 0.19228888421967627,
+            "control": 0.21014497526589399,
+            "chaos": 0.689652577033371
+          },
+          "matching_effect": 0.689652577033371,
+          "largest_absolute_cross_effect": 0.21014497526589399,
+          "discriminant_margin": 0.47950760176747703,
+          "shuffled_matching_effect_95th_percentile": 0.3849424585243173
+        }
+      },
+      "axis_checks": {
+        "pressure": {
+          "matching_effect_large_enough": true,
+          "discriminant_margin_large_enough": true,
+          "beats_shuffled_95th_percentile": true
+        },
+        "control": {
+          "matching_effect_large_enough": false,
+          "discriminant_margin_large_enough": false,
+          "beats_shuffled_95th_percentile": false
+        },
+        "chaos": {
+          "matching_effect_large_enough": true,
+          "discriminant_margin_large_enough": true,
+          "beats_shuffled_95th_percentile": true
+        }
+      },
+      "all_axes_recovered": false,
+      "rows": [
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.7000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1187,
+          "scores": {
+            "pressure": 0.14686605316973414,
+            "control": 0.0019207243537685496,
+            "raw_chaos": 0.24110693029425442,
+            "chaos": 0.18645602609422346,
+            "performance_adequacy": 0.7733333333333335,
+            "win_rate": 0.466
+          },
+          "replicate": 0,
+          "cell": 0
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1086,
+          "scores": {
+            "pressure": 0.1604180418041804,
+            "control": 0.0021155895230862754,
+            "raw_chaos": 0.49931827814239305,
+            "chaos": 0.17975458013126164,
+            "performance_adequacy": 0.36000000000000026,
+            "win_rate": 0.404
+          },
+          "replicate": 0,
+          "cell": 1
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.5000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1247,
+          "scores": {
+            "pressure": 0.1390077071290944,
+            "control": 0.0050806523619034896,
+            "raw_chaos": 0.21043248792324165,
+            "chaos": 0.13467679227087467,
+            "performance_adequacy": 0.6400000000000001,
+            "win_rate": 0.446
+          },
+          "replicate": 0,
+          "cell": 2
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.3000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1099,
+          "scores": {
+            "pressure": 0.16356988082340193,
+            "control": 0.004078535493807296,
+            "raw_chaos": 0.45312552328031014,
+            "chaos": 0.24166694574949873,
+            "performance_adequacy": 0.5333333333333333,
+            "win_rate": 0.43
+          },
+          "replicate": 0,
+          "cell": 3
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1012,
+          "scores": {
+            "pressure": 0.17552083333333335,
+            "control": 0.00014805248146083723,
+            "raw_chaos": 0.21713452479959303,
+            "chaos": 0.21713452479959303,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.504
+          },
+          "replicate": 0,
+          "cell": 4
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.3
+          },
+          "rounds": 500,
+          "decisions": 937,
+          "scores": {
+            "pressure": 0.19136191677175285,
+            "control": 0.002385420056196537,
+            "raw_chaos": 0.4392306739080602,
+            "chaos": 0.19911790550498729,
+            "performance_adequacy": 0.4533333333333333,
+            "win_rate": 0.418
+          },
+          "replicate": 0,
+          "cell": 5
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.29999999999999993
+          },
+          "rounds": 500,
+          "decisions": 1038,
+          "scores": {
+            "pressure": 0.17116184971098267,
+            "control": 0.0018854604792974388,
+            "raw_chaos": 0.22962333330647342,
+            "chaos": 0.22962333330647342,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.528
+          },
+          "replicate": 0,
+          "cell": 6
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.09999999999999998
+          },
+          "rounds": 500,
+          "decisions": 950,
+          "scores": {
+            "pressure": 0.1940320591861899,
+            "control": 0.0006346137516156419,
+            "raw_chaos": 0.447653708922775,
+            "chaos": 0.214873780282932,
+            "performance_adequacy": 0.48,
+            "win_rate": 0.422
+          },
+          "replicate": 0,
+          "cell": 7
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.7000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1193,
+          "scores": {
+            "pressure": 0.1443390514631685,
+            "control": 0.00033592223346611867,
+            "raw_chaos": 0.20731598454868336,
+            "chaos": 0.18243806640284133,
+            "performance_adequacy": 0.8799999999999999,
+            "win_rate": 0.482
+          },
+          "replicate": 1,
+          "cell": 0
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1102,
+          "scores": {
+            "pressure": 0.1588924731182796,
+            "control": 0.00042600160288915783,
+            "raw_chaos": 0.43074424426090857,
+            "chaos": 0.12635164498319995,
+            "performance_adequacy": 0.29333333333333356,
+            "win_rate": 0.394
+          },
+          "replicate": 1,
+          "cell": 1
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.5000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1231,
+          "scores": {
+            "pressure": 0.13728880157170922,
+            "control": 0.0019720467517708937,
+            "raw_chaos": 0.19230978660538894,
+            "chaos": 0.1615402207485267,
+            "performance_adequacy": 0.8399999999999999,
+            "win_rate": 0.476
+          },
+          "replicate": 1,
+          "cell": 2
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.3000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1091,
+          "scores": {
+            "pressure": 0.1620680044593088,
+            "control": 0.000306802085457492,
+            "raw_chaos": 0.46546118668114456,
+            "chaos": 0.36616280018916714,
+            "performance_adequacy": 0.7866666666666668,
+            "win_rate": 0.468
+          },
+          "replicate": 1,
+          "cell": 3
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1017,
+          "scores": {
+            "pressure": 0.17537339556592768,
+            "control": 0.0006480177976002795,
+            "raw_chaos": 0.18787512467393902,
+            "chaos": 0.1728451147000239,
+            "performance_adequacy": 0.9199999999999999,
+            "win_rate": 0.488
+          },
+          "replicate": 1,
+          "cell": 4
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.3
+          },
+          "rounds": 500,
+          "decisions": 905,
+          "scores": {
+            "pressure": 0.20473614775725593,
+            "control": 0.002498755246905026,
+            "raw_chaos": 0.43746886870934165,
+            "chaos": 0.3324763402190998,
+            "performance_adequacy": 0.7600000000000002,
+            "win_rate": 0.464
+          },
+          "replicate": 1,
+          "cell": 5
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.29999999999999993
+          },
+          "rounds": 500,
+          "decisions": 1014,
+          "scores": {
+            "pressure": 0.17458045977011494,
+            "control": 0.0003339894945944971,
+            "raw_chaos": 0.19528017493289615,
+            "chaos": 0.13539425462014135,
+            "performance_adequacy": 0.6933333333333335,
+            "win_rate": 0.454
+          },
+          "replicate": 1,
+          "cell": 6
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.09999999999999998
+          },
+          "rounds": 500,
+          "decisions": 904,
+          "scores": {
+            "pressure": 0.19868211920529802,
+            "control": 0.0004591821557534051,
+            "raw_chaos": 0.42450791094841817,
+            "chaos": 0.18678348081730398,
+            "performance_adequacy": 0.43999999999999995,
+            "win_rate": 0.416
+          },
+          "replicate": 1,
+          "cell": 7
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.7000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1193,
+          "scores": {
+            "pressure": 0.14418,
+            "control": 0.0013236540098940325,
+            "raw_chaos": 0.22689058338470358,
+            "chaos": 0.15731080448006118,
+            "performance_adequacy": 0.6933333333333335,
+            "win_rate": 0.454
+          },
+          "replicate": 2,
+          "cell": 0
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1102,
+          "scores": {
+            "pressure": 0.16200214132762314,
+            "control": 0.002329883226183815,
+            "raw_chaos": 0.47309163106918883,
+            "chaos": 0.17031298718490812,
+            "performance_adequacy": 0.36000000000000026,
+            "win_rate": 0.404
+          },
+          "replicate": 2,
+          "cell": 1
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.5000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1239,
+          "scores": {
+            "pressure": 0.14111867704280154,
+            "control": 0.0013953560224609525,
+            "raw_chaos": 0.19839592403496428,
+            "chaos": 0.1560714602408386,
+            "performance_adequacy": 0.7866666666666668,
+            "win_rate": 0.468
+          },
+          "replicate": 2,
+          "cell": 2
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.3000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1120,
+          "scores": {
+            "pressure": 0.15845588235294117,
+            "control": 0.0017707896895168356,
+            "raw_chaos": 0.42989215203649433,
+            "chaos": 0.1834206515355709,
+            "performance_adequacy": 0.42666666666666664,
+            "win_rate": 0.414
+          },
+          "replicate": 2,
+          "cell": 3
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1014,
+          "scores": {
+            "pressure": 0.1765911730545877,
+            "control": 0.0005544149913835367,
+            "raw_chaos": 0.22161654783416398,
+            "chaos": 0.18911278748515326,
+            "performance_adequacy": 0.8533333333333333,
+            "win_rate": 0.478
+          },
+          "replicate": 2,
+          "cell": 4
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.3
+          },
+          "rounds": 500,
+          "decisions": 912,
+          "scores": {
+            "pressure": 0.19453503184713378,
+            "control": 0.0017551331541141157,
+            "raw_chaos": 0.45710280427932926,
+            "chaos": 0.34739813125229035,
+            "performance_adequacy": 0.7600000000000002,
+            "win_rate": 0.464
+          },
+          "replicate": 2,
+          "cell": 5
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.29999999999999993
+          },
+          "rounds": 500,
+          "decisions": 1047,
+          "scores": {
+            "pressure": 0.17003389830508478,
+            "control": 0.0001663515059131961,
+            "raw_chaos": 0.23975308594272216,
+            "chaos": 0.22057283906730438,
+            "performance_adequacy": 0.9199999999999999,
+            "win_rate": 0.488
+          },
+          "replicate": 2,
+          "cell": 6
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.09999999999999998
+          },
+          "rounds": 500,
+          "decisions": 921,
+          "scores": {
+            "pressure": 0.19289272030651342,
+            "control": 0.0008130816678837127,
+            "raw_chaos": 0.45376203431355766,
+            "chaos": 0.22385593692802178,
+            "performance_adequacy": 0.49333333333333335,
+            "win_rate": 0.424
+          },
+          "replicate": 2,
+          "cell": 7
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.7000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1231,
+          "scores": {
+            "pressure": 0.14368497109826592,
+            "control": 0.0026992402570194833,
+            "raw_chaos": 0.2326875214160781,
+            "chaos": 0.14892001370629002,
+            "performance_adequacy": 0.6400000000000001,
+            "win_rate": 0.446
+          },
+          "replicate": 3,
+          "cell": 0
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1146,
+          "scores": {
+            "pressure": 0.16071354705274044,
+            "control": 0.0017821683182918375,
+            "raw_chaos": 0.45850655388845885,
+            "chaos": 0.31789787736266484,
+            "performance_adequacy": 0.6933333333333335,
+            "win_rate": 0.454
+          },
+          "replicate": 3,
+          "cell": 1
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.5000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1225,
+          "scores": {
+            "pressure": 0.14145544554455447,
+            "control": 0.0016441805665398613,
+            "raw_chaos": 0.22701773891058746,
+            "chaos": 0.21188322298321494,
+            "performance_adequacy": 0.9333333333333332,
+            "win_rate": 0.49
+          },
+          "replicate": 3,
+          "cell": 2
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.3000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1095,
+          "scores": {
+            "pressure": 0.16222162162162163,
+            "control": 0.0013805732107463786,
+            "raw_chaos": 0.3996704434958402,
+            "chaos": 0.2131575698644481,
+            "performance_adequacy": 0.5333333333333333,
+            "win_rate": 0.43
+          },
+          "replicate": 3,
+          "cell": 3
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1043,
+          "scores": {
+            "pressure": 0.17417139614074914,
+            "control": 0.0009561835778232944,
+            "raw_chaos": 0.241511238549544,
+            "chaos": 0.20286944038161694,
+            "performance_adequacy": 0.8399999999999999,
+            "win_rate": 0.476
+          },
+          "replicate": 3,
+          "cell": 4
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.3
+          },
+          "rounds": 500,
+          "decisions": 905,
+          "scores": {
+            "pressure": 0.1943606138107417,
+            "control": 0.0004494057487103997,
+            "raw_chaos": 0.39238436453879016,
+            "chaos": 0.15172195428833218,
+            "performance_adequacy": 0.3866666666666666,
+            "win_rate": 0.408
+          },
+          "replicate": 3,
+          "cell": 5
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.29999999999999993
+          },
+          "rounds": 500,
+          "decisions": 1015,
+          "scores": {
+            "pressure": 0.17735571260306246,
+            "control": 0.0005614708368098763,
+            "raw_chaos": 0.19784818185070546,
+            "chaos": 0.17146842427061137,
+            "performance_adequacy": 0.8666666666666666,
+            "win_rate": 0.48
+          },
+          "replicate": 3,
+          "cell": 6
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.09999999999999998
+          },
+          "rounds": 500,
+          "decisions": 902,
+          "scores": {
+            "pressure": 0.1966796875,
+            "control": 0.0006169468248348405,
+            "raw_chaos": 0.426347243879855,
+            "chaos": 0.329708535267088,
+            "performance_adequacy": 0.7733333333333335,
+            "win_rate": 0.466
+          },
+          "replicate": 3,
+          "cell": 7
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.7000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1238,
+          "scores": {
+            "pressure": 0.14483527131782944,
+            "control": 0.001150475476630823,
+            "raw_chaos": 0.19183345787593772,
+            "chaos": 0.15346676630075015,
+            "performance_adequacy": 0.7999999999999998,
+            "win_rate": 0.47
+          },
+          "replicate": 4,
+          "cell": 0
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1068,
+          "scores": {
+            "pressure": 0.15925638179800222,
+            "control": 0.0015472666557534932,
+            "raw_chaos": 0.4845225325867766,
+            "chaos": 0.1421266095587879,
+            "performance_adequacy": 0.29333333333333356,
+            "win_rate": 0.394
+          },
+          "replicate": 4,
+          "cell": 1
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.5000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1230,
+          "scores": {
+            "pressure": 0.1423073217726397,
+            "control": 0.0003657986791269802,
+            "raw_chaos": 0.2269689562053053,
+            "chaos": 0.1846014177136483,
+            "performance_adequacy": 0.8133333333333332,
+            "win_rate": 0.472
+          },
+          "replicate": 4,
+          "cell": 2
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.3000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1119,
+          "scores": {
+            "pressure": 0.1639233193277311,
+            "control": 0.0014513192223229788,
+            "raw_chaos": 0.4531596708222629,
+            "chaos": 0.2598115446047641,
+            "performance_adequacy": 0.5733333333333334,
+            "win_rate": 0.436
+          },
+          "replicate": 4,
+          "cell": 3
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1004,
+          "scores": {
+            "pressure": 0.17984447004608298,
+            "control": 0.0007786961292211663,
+            "raw_chaos": 0.17683765915987326,
+            "chaos": 0.1697641527934783,
+            "performance_adequacy": 0.96,
+            "win_rate": 0.494
+          },
+          "replicate": 4,
+          "cell": 4
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.3
+          },
+          "rounds": 500,
+          "decisions": 895,
+          "scores": {
+            "pressure": 0.19910039113428946,
+            "control": 0.0017637568362910275,
+            "raw_chaos": 0.4229458511663962,
+            "chaos": 0.15789978443545472,
+            "performance_adequacy": 0.37333333333333363,
+            "win_rate": 0.406
+          },
+          "replicate": 4,
+          "cell": 5
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.29999999999999993
+          },
+          "rounds": 500,
+          "decisions": 1026,
+          "scores": {
+            "pressure": 0.174375,
+            "control": 0.00018579707483014975,
+            "raw_chaos": 0.1888796667894954,
+            "chaos": 0.14858533787440306,
+            "performance_adequacy": 0.7866666666666668,
+            "win_rate": 0.468
+          },
+          "replicate": 4,
+          "cell": 6
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.09999999999999998
+          },
+          "rounds": 500,
+          "decisions": 919,
+          "scores": {
+            "pressure": 0.1980774193548387,
+            "control": 0.002297751421812861,
+            "raw_chaos": 0.44749745283779074,
+            "chaos": 0.33413143145221713,
+            "performance_adequacy": 0.7466666666666668,
+            "win_rate": 0.462
+          },
+          "replicate": 4,
+          "cell": 7
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.7000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1211,
+          "scores": {
+            "pressure": 0.1422974308300395,
+            "control": 0.000139298302190072,
+            "raw_chaos": 0.22738771141477798,
+            "chaos": 0.16978282452303425,
+            "performance_adequacy": 0.7466666666666668,
+            "win_rate": 0.462
+          },
+          "replicate": 5,
+          "cell": 0
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1087,
+          "scores": {
+            "pressure": 0.16052516411378556,
+            "control": 0.004233934626187277,
+            "raw_chaos": 0.4390376006956531,
+            "chaos": 0.18146887495420327,
+            "performance_adequacy": 0.4133333333333333,
+            "win_rate": 0.412
+          },
+          "replicate": 5,
+          "cell": 1
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.5000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1201,
+          "scores": {
+            "pressure": 0.14478109452736318,
+            "control": 0.0003037972475722321,
+            "raw_chaos": 0.2425743047889449,
+            "chaos": 0.19405944383115586,
+            "performance_adequacy": 0.7999999999999998,
+            "win_rate": 0.47
+          },
+          "replicate": 5,
+          "cell": 2
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.3000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1089,
+          "scores": {
+            "pressure": 0.1598858695652174,
+            "control": 0.0008029351864164361,
+            "raw_chaos": 0.45684673604347437,
+            "chaos": 0.19492127404521573,
+            "performance_adequacy": 0.42666666666666664,
+            "win_rate": 0.414
+          },
+          "replicate": 5,
+          "cell": 3
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1050,
+          "scores": {
+            "pressure": 0.16953776775648252,
+            "control": 0.0022500048892819557,
+            "raw_chaos": 0.22386576311293238,
+            "chaos": 0.1940169946978747,
+            "performance_adequacy": 0.8666666666666666,
+            "win_rate": 0.48
+          },
+          "replicate": 5,
+          "cell": 4
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.3
+          },
+          "rounds": 500,
+          "decisions": 888,
+          "scores": {
+            "pressure": 0.19945538057742784,
+            "control": 0.003339123244057743,
+            "raw_chaos": 0.42906954548937865,
+            "chaos": 0.16590689092255972,
+            "performance_adequacy": 0.3866666666666666,
+            "win_rate": 0.408
+          },
+          "replicate": 5,
+          "cell": 5
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.29999999999999993
+          },
+          "rounds": 500,
+          "decisions": 1037,
+          "scores": {
+            "pressure": 0.17016183035714286,
+            "control": 0.00013439599137125396,
+            "raw_chaos": 0.2080146582952658,
+            "chaos": 0.16363819785894246,
+            "performance_adequacy": 0.7866666666666668,
+            "win_rate": 0.468
+          },
+          "replicate": 5,
+          "cell": 6
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.09999999999999998
+          },
+          "rounds": 500,
+          "decisions": 928,
+          "scores": {
+            "pressure": 0.19237735849056603,
+            "control": 0.0006055110173833872,
+            "raw_chaos": 0.4567439370025344,
+            "chaos": 0.19487741312108134,
+            "performance_adequacy": 0.42666666666666664,
+            "win_rate": 0.414
+          },
+          "replicate": 5,
+          "cell": 7
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.7000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1240,
+          "scores": {
+            "pressure": 0.14283545543584722,
+            "control": 0.0016849440641770346,
+            "raw_chaos": 0.22041149103549748,
+            "chaos": 0.19396211211123776,
+            "performance_adequacy": 0.8799999999999999,
+            "win_rate": 0.482
+          },
+          "replicate": 6,
+          "cell": 0
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1069,
+          "scores": {
+            "pressure": 0.16612040133779263,
+            "control": 0.003149066880299582,
+            "raw_chaos": 0.4684497594221325,
+            "chaos": 0.20611789414573828,
+            "performance_adequacy": 0.43999999999999995,
+            "win_rate": 0.416
+          },
+          "replicate": 6,
+          "cell": 1
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.5000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1229,
+          "scores": {
+            "pressure": 0.14375602700096435,
+            "control": 0.0019404329604149602,
+            "raw_chaos": 0.24730215177954812,
+            "chaos": 0.13189448094909234,
+            "performance_adequacy": 0.5333333333333333,
+            "win_rate": 0.43
+          },
+          "replicate": 6,
+          "cell": 2
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.3000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1093,
+          "scores": {
+            "pressure": 0.16081877729257643,
+            "control": 0.0019942795692532945,
+            "raw_chaos": 0.4533808170432126,
+            "chaos": 0.1329917063326758,
+            "performance_adequacy": 0.29333333333333356,
+            "win_rate": 0.394
+          },
+          "replicate": 6,
+          "cell": 3
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1013,
+          "scores": {
+            "pressure": 0.1807706093189964,
+            "control": 0.00031574811955421996,
+            "raw_chaos": 0.20689938982863554,
+            "chaos": 0.1986234142354901,
+            "performance_adequacy": 0.96,
+            "win_rate": 0.494
+          },
+          "replicate": 6,
+          "cell": 4
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.3
+          },
+          "rounds": 500,
+          "decisions": 905,
+          "scores": {
+            "pressure": 0.1967295188556567,
+            "control": 0.0017939932594439438,
+            "raw_chaos": 0.4057690431916504,
+            "chaos": 0.23805117200576828,
+            "performance_adequacy": 0.5866666666666668,
+            "win_rate": 0.438
+          },
+          "replicate": 6,
+          "cell": 5
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.29999999999999993
+          },
+          "rounds": 500,
+          "decisions": 1024,
+          "scores": {
+            "pressure": 0.17388571428571428,
+            "control": 0.000864865540626373,
+            "raw_chaos": 0.21198127030238761,
+            "chaos": 0.12153592830670223,
+            "performance_adequacy": 0.5733333333333334,
+            "win_rate": 0.436
+          },
+          "replicate": 6,
+          "cell": 6
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.09999999999999998
+          },
+          "rounds": 500,
+          "decisions": 903,
+          "scores": {
+            "pressure": 0.19218749999999998,
+            "control": 0.0026842478056591035,
+            "raw_chaos": 0.4416914737521921,
+            "chaos": 0.15311971090076001,
+            "performance_adequacy": 0.3466666666666669,
+            "win_rate": 0.402
+          },
+          "replicate": 6,
+          "cell": 7
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.7000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1192,
+          "scores": {
+            "pressure": 0.14414414414414414,
+            "control": 0.0006179116650514014,
+            "raw_chaos": 0.23356775867108026,
+            "chaos": 0.21176810119511275,
+            "performance_adequacy": 0.9066666666666666,
+            "win_rate": 0.486
+          },
+          "replicate": 7,
+          "cell": 0
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1098,
+          "scores": {
+            "pressure": 0.16091935483870967,
+            "control": 0.003217550326419837,
+            "raw_chaos": 0.45538866380703313,
+            "chaos": 0.18215546552281323,
+            "performance_adequacy": 0.3999999999999999,
+            "win_rate": 0.41
+          },
+          "replicate": 7,
+          "cell": 1
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.5000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1233,
+          "scores": {
+            "pressure": 0.14235148514851487,
+            "control": 0.0007975623763149706,
+            "raw_chaos": 0.20340282493956324,
+            "chaos": 0.18170652361267647,
+            "performance_adequacy": 0.8933333333333332,
+            "win_rate": 0.484
+          },
+          "replicate": 7,
+          "cell": 2
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.3000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1078,
+          "scores": {
+            "pressure": 0.16547169811320755,
+            "control": 0.003640397162606096,
+            "raw_chaos": 0.4351595191614499,
+            "chaos": 0.2901063461076333,
+            "performance_adequacy": 0.6666666666666667,
+            "win_rate": 0.45
+          },
+          "replicate": 7,
+          "cell": 3
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1047,
+          "scores": {
+            "pressure": 0.16933102652825838,
+            "control": 0.00013742124419200547,
+            "raw_chaos": 0.19707321124908392,
+            "chaos": 0.19707321124908392,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.506
+          },
+          "replicate": 7,
+          "cell": 4
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.3
+          },
+          "rounds": 500,
+          "decisions": 912,
+          "scores": {
+            "pressure": 0.19372574385510996,
+            "control": 0.001394849624569074,
+            "raw_chaos": 0.4408600602842025,
+            "chaos": 0.08817201205684057,
+            "performance_adequacy": 0.20000000000000015,
+            "win_rate": 0.38
+          },
+          "replicate": 7,
+          "cell": 5
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.29999999999999993
+          },
+          "rounds": 500,
+          "decisions": 1016,
+          "scores": {
+            "pressure": 0.17770491803278687,
+            "control": 0.0005557592542500246,
+            "raw_chaos": 0.19689407213060178,
+            "chaos": 0.19689407213060178,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.508
+          },
+          "replicate": 7,
+          "cell": 6
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.09999999999999998
+          },
+          "rounds": 500,
+          "decisions": 923,
+          "scores": {
+            "pressure": 0.20038361508452535,
+            "control": 0.00027046785890172387,
+            "raw_chaos": 0.39312421177009144,
+            "chaos": 0.2568411516897931,
+            "performance_adequacy": 0.6533333333333334,
+            "win_rate": 0.448
+          },
+          "replicate": 7,
+          "cell": 7
+        }
+      ]
+    },
+    "family-b": {
+      "effects": {
+        "pressure": {
+          "standardized_effect_by_assigned_axis": {
+            "pressure": 0.5968985700284882,
+            "control": 1.3478576248588818,
+            "chaos": 1.2751552262230321
+          },
+          "matching_effect": 0.5968985700284882,
+          "largest_absolute_cross_effect": 1.3478576248588818,
+          "discriminant_margin": -0.7509590548303936,
+          "shuffled_matching_effect_95th_percentile": 0.37313806143238076
+        },
+        "control": {
+          "standardized_effect_by_assigned_axis": {
+            "pressure": 0.01514743084754812,
+            "control": 0.4495010578579317,
+            "chaos": 0.13619241468575036
+          },
+          "matching_effect": 0.4495010578579317,
+          "largest_absolute_cross_effect": 0.13619241468575036,
+          "discriminant_margin": 0.3133086431721813,
+          "shuffled_matching_effect_95th_percentile": 0.35476845871006646
+        },
+        "chaos": {
+          "standardized_effect_by_assigned_axis": {
+            "pressure": 1.0985086159172652,
+            "control": 0.6716818015063217,
+            "chaos": 1.3396726000734926
+          },
+          "matching_effect": 1.3396726000734926,
+          "largest_absolute_cross_effect": 1.0985086159172652,
+          "discriminant_margin": 0.24116398415622742,
+          "shuffled_matching_effect_95th_percentile": 0.4577997840777767
+        }
+      },
+      "axis_checks": {
+        "pressure": {
+          "matching_effect_large_enough": true,
+          "discriminant_margin_large_enough": false,
+          "beats_shuffled_95th_percentile": true
+        },
+        "control": {
+          "matching_effect_large_enough": false,
+          "discriminant_margin_large_enough": true,
+          "beats_shuffled_95th_percentile": true
+        },
+        "chaos": {
+          "matching_effect_large_enough": true,
+          "discriminant_margin_large_enough": true,
+          "beats_shuffled_95th_percentile": true
+        }
+      },
+      "all_axes_recovered": false,
+      "rows": [
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.7000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1259,
+          "scores": {
+            "pressure": 0.1315926640926641,
+            "control": 0.0017266400591695284,
+            "raw_chaos": 0.4549614433754509,
+            "chaos": 0.4549614433754509,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.542
+          },
+          "replicate": 0,
+          "cell": 0
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1155,
+          "scores": {
+            "pressure": 0.14152452025586354,
+            "control": 0.0028614636190760724,
+            "raw_chaos": 0.6158156488778701,
+            "chaos": 0.6158156488778701,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.508
+          },
+          "replicate": 0,
+          "cell": 1
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.5000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1088,
+          "scores": {
+            "pressure": 0.14799661399548533,
+            "control": 0.0026378726779749386,
+            "raw_chaos": 0.5851461813015653,
+            "chaos": 0.5851461813015653,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.658
+          },
+          "replicate": 0,
+          "cell": 2
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.3000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1051,
+          "scores": {
+            "pressure": 0.16079905992949473,
+            "control": 0.0014367278165889731,
+            "raw_chaos": 0.6889109936287888,
+            "chaos": 0.6889109936287888,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.584
+          },
+          "replicate": 0,
+          "cell": 3
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1183,
+          "scores": {
+            "pressure": 0.13961894953656023,
+            "control": 0.001406039561786722,
+            "raw_chaos": 0.6343572932014365,
+            "chaos": 0.6343572932014365,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.548
+          },
+          "replicate": 0,
+          "cell": 4
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.3
+          },
+          "rounds": 500,
+          "decisions": 1056,
+          "scores": {
+            "pressure": 0.15353379152348223,
+            "control": 0.0015224963840514251,
+            "raw_chaos": 0.7480542142802695,
+            "chaos": 0.6483136523762335,
+            "performance_adequacy": 0.8666666666666666,
+            "win_rate": 0.48
+          },
+          "replicate": 0,
+          "cell": 5
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.29999999999999993
+          },
+          "rounds": 500,
+          "decisions": 1039,
+          "scores": {
+            "pressure": 0.15594228504122498,
+            "control": 0.002925215858147838,
+            "raw_chaos": 0.6652651599991186,
+            "chaos": 0.6652651599991186,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.588
+          },
+          "replicate": 0,
+          "cell": 6
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.09999999999999998
+          },
+          "rounds": 500,
+          "decisions": 951,
+          "scores": {
+            "pressure": 0.1657936507936508,
+            "control": 0.0020708073918306535,
+            "raw_chaos": 0.7388650463011142,
+            "chaos": 0.7388650463011142,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.582
+          },
+          "replicate": 0,
+          "cell": 7
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.7000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1262,
+          "scores": {
+            "pressure": 0.13440212150433944,
+            "control": 0.0010450067930261307,
+            "raw_chaos": 0.47507361771653694,
+            "chaos": 0.47507361771653694,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.576
+          },
+          "replicate": 1,
+          "cell": 0
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1145,
+          "scores": {
+            "pressure": 0.14748953974895398,
+            "control": 0.0021744754896660485,
+            "raw_chaos": 0.6438778502632818,
+            "chaos": 0.6438778502632818,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.508
+          },
+          "replicate": 1,
+          "cell": 1
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.5000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1115,
+          "scores": {
+            "pressure": 0.14755750273822563,
+            "control": 0.0027938730310647407,
+            "raw_chaos": 0.5647844493414735,
+            "chaos": 0.5647844493414735,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.638
+          },
+          "replicate": 1,
+          "cell": 2
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.3000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1049,
+          "scores": {
+            "pressure": 0.16031472684085513,
+            "control": 0.0021460629770510948,
+            "raw_chaos": 0.6692592703946515,
+            "chaos": 0.6692592703946515,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.636
+          },
+          "replicate": 1,
+          "cell": 3
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1202,
+          "scores": {
+            "pressure": 0.135035140562249,
+            "control": 0.0010005876738974535,
+            "raw_chaos": 0.6065588281318448,
+            "chaos": 0.6065588281318448,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.55
+          },
+          "replicate": 1,
+          "cell": 4
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.3
+          },
+          "rounds": 500,
+          "decisions": 1101,
+          "scores": {
+            "pressure": 0.14960643015521063,
+            "control": 0.004140821515355803,
+            "raw_chaos": 0.7472229617742243,
+            "chaos": 0.7472229617742243,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.536
+          },
+          "replicate": 1,
+          "cell": 5
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.29999999999999993
+          },
+          "rounds": 500,
+          "decisions": 1047,
+          "scores": {
+            "pressure": 0.15498259860788863,
+            "control": 0.0020750325398356776,
+            "raw_chaos": 0.6644461351392725,
+            "chaos": 0.6644461351392725,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.596
+          },
+          "replicate": 1,
+          "cell": 6
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.09999999999999998
+          },
+          "rounds": 500,
+          "decisions": 957,
+          "scores": {
+            "pressure": 0.16981981981981983,
+            "control": 0.001778595981021649,
+            "raw_chaos": 0.7197972561507413,
+            "chaos": 0.7197972561507413,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.572
+          },
+          "replicate": 1,
+          "cell": 7
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.7000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1285,
+          "scores": {
+            "pressure": 0.13214765100671141,
+            "control": 0.0022356476509356807,
+            "raw_chaos": 0.46427369512873834,
+            "chaos": 0.46427369512873834,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.568
+          },
+          "replicate": 2,
+          "cell": 0
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1126,
+          "scores": {
+            "pressure": 0.1456148867313916,
+            "control": 0.0018016360806202107,
+            "raw_chaos": 0.6075179428655836,
+            "chaos": 0.6075179428655836,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.532
+          },
+          "replicate": 2,
+          "cell": 1
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.5000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1148,
+          "scores": {
+            "pressure": 0.1444290288153682,
+            "control": 0.0044784979624269226,
+            "raw_chaos": 0.5750584910565741,
+            "chaos": 0.5750584910565741,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.608
+          },
+          "replicate": 2,
+          "cell": 2
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.3000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1038,
+          "scores": {
+            "pressure": 0.15872302158273383,
+            "control": 0.00175225016310557,
+            "raw_chaos": 0.674773497743281,
+            "chaos": 0.674773497743281,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.612
+          },
+          "replicate": 2,
+          "cell": 3
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1210,
+          "scores": {
+            "pressure": 0.1377972027972028,
+            "control": 0.003360629092948552,
+            "raw_chaos": 0.5986033680989842,
+            "chaos": 0.5986033680989842,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.562
+          },
+          "replicate": 2,
+          "cell": 4
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.3
+          },
+          "rounds": 500,
+          "decisions": 1076,
+          "scores": {
+            "pressure": 0.15401905829596413,
+            "control": 0.0029215638857834794,
+            "raw_chaos": 0.7482901760006085,
+            "chaos": 0.7482901760006085,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.508
+          },
+          "replicate": 2,
+          "cell": 5
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.29999999999999993
+          },
+          "rounds": 500,
+          "decisions": 1063,
+          "scores": {
+            "pressure": 0.15123717217787913,
+            "control": 0.0014396100656705224,
+            "raw_chaos": 0.6740824810268699,
+            "chaos": 0.6740824810268699,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.6
+          },
+          "replicate": 2,
+          "cell": 6
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.09999999999999998
+          },
+          "rounds": 500,
+          "decisions": 982,
+          "scores": {
+            "pressure": 0.16348880597014925,
+            "control": 0.0053395153851273905,
+            "raw_chaos": 0.7216151301652716,
+            "chaos": 0.7216151301652716,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.582
+          },
+          "replicate": 2,
+          "cell": 7
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.7000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1250,
+          "scores": {
+            "pressure": 0.1338050930460333,
+            "control": 0.0037462369595274714,
+            "raw_chaos": 0.48929539662140237,
+            "chaos": 0.48929539662140237,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.562
+          },
+          "replicate": 3,
+          "cell": 0
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1128,
+          "scores": {
+            "pressure": 0.1431115879828326,
+            "control": 0.0005757187855243427,
+            "raw_chaos": 0.6157206581241444,
+            "chaos": 0.6157206581241444,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.516
+          },
+          "replicate": 3,
+          "cell": 1
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.5000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1121,
+          "scores": {
+            "pressure": 0.14308982683982685,
+            "control": 0.001709334822806996,
+            "raw_chaos": 0.580409470659383,
+            "chaos": 0.580409470659383,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.62
+          },
+          "replicate": 3,
+          "cell": 2
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.3000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1055,
+          "scores": {
+            "pressure": 0.15910151691948657,
+            "control": 0.005994508570908512,
+            "raw_chaos": 0.6861963812799398,
+            "chaos": 0.6861963812799398,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.608
+          },
+          "replicate": 3,
+          "cell": 3
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1209,
+          "scores": {
+            "pressure": 0.13620535714285717,
+            "control": 0.00085718740535053,
+            "raw_chaos": 0.5961313755351595,
+            "chaos": 0.5961313755351595,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.52
+          },
+          "replicate": 3,
+          "cell": 4
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.3
+          },
+          "rounds": 500,
+          "decisions": 1074,
+          "scores": {
+            "pressure": 0.1518882681564246,
+            "control": 0.002273186881582051,
+            "raw_chaos": 0.7570298734912475,
+            "chaos": 0.7570298734912475,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.504
+          },
+          "replicate": 3,
+          "cell": 5
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.29999999999999993
+          },
+          "rounds": 500,
+          "decisions": 1052,
+          "scores": {
+            "pressure": 0.15265717674970344,
+            "control": 0.0030099662350195557,
+            "raw_chaos": 0.6508366379543231,
+            "chaos": 0.6508366379543231,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.606
+          },
+          "replicate": 3,
+          "cell": 6
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.09999999999999998
+          },
+          "rounds": 500,
+          "decisions": 985,
+          "scores": {
+            "pressure": 0.16754037267080746,
+            "control": 0.0021941556088727553,
+            "raw_chaos": 0.7250727156142717,
+            "chaos": 0.7250727156142717,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.562
+          },
+          "replicate": 3,
+          "cell": 7
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.7000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1228,
+          "scores": {
+            "pressure": 0.13204246713852377,
+            "control": 0.005254407487069477,
+            "raw_chaos": 0.4539601352317543,
+            "chaos": 0.4539601352317543,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.542
+          },
+          "replicate": 4,
+          "cell": 0
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1120,
+          "scores": {
+            "pressure": 0.14860664523043945,
+            "control": 0.0014030033254022786,
+            "raw_chaos": 0.6683223388796722,
+            "chaos": 0.6683223388796722,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.518
+          },
+          "replicate": 4,
+          "cell": 1
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.5000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1125,
+          "scores": {
+            "pressure": 0.14495038588754133,
+            "control": 0.0030987827340510426,
+            "raw_chaos": 0.561598237793401,
+            "chaos": 0.561598237793401,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.622
+          },
+          "replicate": 4,
+          "cell": 2
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.3000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1045,
+          "scores": {
+            "pressure": 0.159165687426557,
+            "control": 0.007185709678632483,
+            "raw_chaos": 0.672633332158269,
+            "chaos": 0.672633332158269,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.584
+          },
+          "replicate": 4,
+          "cell": 3
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1168,
+          "scores": {
+            "pressure": 0.1389233954451346,
+            "control": 0.001692767828838576,
+            "raw_chaos": 0.61195903523304,
+            "chaos": 0.61195903523304,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.562
+          },
+          "replicate": 4,
+          "cell": 4
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.3
+          },
+          "rounds": 500,
+          "decisions": 1075,
+          "scores": {
+            "pressure": 0.1514501679731243,
+            "control": 0.0008617532402326432,
+            "raw_chaos": 0.7305777134276455,
+            "chaos": 0.7208366772486103,
+            "performance_adequacy": 0.9866666666666667,
+            "win_rate": 0.498
+          },
+          "replicate": 4,
+          "cell": 5
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.29999999999999993
+          },
+          "rounds": 500,
+          "decisions": 1065,
+          "scores": {
+            "pressure": 0.15033986175115208,
+            "control": 0.0027555342111401726,
+            "raw_chaos": 0.6590418821550996,
+            "chaos": 0.6590418821550996,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.626
+          },
+          "replicate": 4,
+          "cell": 6
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.09999999999999998
+          },
+          "rounds": 500,
+          "decisions": 974,
+          "scores": {
+            "pressure": 0.16389851485148516,
+            "control": 0.002762711254268195,
+            "raw_chaos": 0.724006224260781,
+            "chaos": 0.724006224260781,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.536
+          },
+          "replicate": 4,
+          "cell": 7
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.7000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1245,
+          "scores": {
+            "pressure": 0.1293026706231454,
+            "control": 0.002727731909142311,
+            "raw_chaos": 0.47363103903649784,
+            "chaos": 0.47363103903649784,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.588
+          },
+          "replicate": 5,
+          "cell": 0
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1137,
+          "scores": {
+            "pressure": 0.14606911447084236,
+            "control": 0.0017197191185455466,
+            "raw_chaos": 0.631058810100274,
+            "chaos": 0.631058810100274,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.578
+          },
+          "replicate": 5,
+          "cell": 1
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.5000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1136,
+          "scores": {
+            "pressure": 0.14365679824561406,
+            "control": 0.0014130358262626516,
+            "raw_chaos": 0.5775297952359403,
+            "chaos": 0.5775297952359403,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.642
+          },
+          "replicate": 5,
+          "cell": 2
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.3000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1017,
+          "scores": {
+            "pressure": 0.16363247863247865,
+            "control": 0.003116239113103135,
+            "raw_chaos": 0.6640993035870472,
+            "chaos": 0.6640993035870472,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.61
+          },
+          "replicate": 5,
+          "cell": 3
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1203,
+          "scores": {
+            "pressure": 0.13995943204868155,
+            "control": 0.003322891139630997,
+            "raw_chaos": 0.6160304000713889,
+            "chaos": 0.6160304000713889,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.556
+          },
+          "replicate": 5,
+          "cell": 4
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.3
+          },
+          "rounds": 500,
+          "decisions": 1052,
+          "scores": {
+            "pressure": 0.15469072164948455,
+            "control": 0.00271650139105878,
+            "raw_chaos": 0.7176991661240816,
+            "chaos": 0.7176991661240816,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.514
+          },
+          "replicate": 5,
+          "cell": 5
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.29999999999999993
+          },
+          "rounds": 500,
+          "decisions": 1041,
+          "scores": {
+            "pressure": 0.15261648745519715,
+            "control": 0.001011863610105477,
+            "raw_chaos": 0.6598109271213679,
+            "chaos": 0.6598109271213679,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.622
+          },
+          "replicate": 5,
+          "cell": 6
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.09999999999999998
+          },
+          "rounds": 500,
+          "decisions": 965,
+          "scores": {
+            "pressure": 0.1664732142857143,
+            "control": 0.0062824235057738756,
+            "raw_chaos": 0.7302235628917209,
+            "chaos": 0.7302235628917209,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.534
+          },
+          "replicate": 5,
+          "cell": 7
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.7000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1244,
+          "scores": {
+            "pressure": 0.13403751233958539,
+            "control": 0.002622271223707101,
+            "raw_chaos": 0.44591924841452707,
+            "chaos": 0.44591924841452707,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.56
+          },
+          "replicate": 6,
+          "cell": 0
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1185,
+          "scores": {
+            "pressure": 0.14486196319018407,
+            "control": 0.000791887952114751,
+            "raw_chaos": 0.6586304892169264,
+            "chaos": 0.6586304892169264,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.528
+          },
+          "replicate": 6,
+          "cell": 1
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.5000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1072,
+          "scores": {
+            "pressure": 0.1514318442153494,
+            "control": 0.005193965608788489,
+            "raw_chaos": 0.6015509112294561,
+            "chaos": 0.6015509112294561,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.632
+          },
+          "replicate": 6,
+          "cell": 2
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.3000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1010,
+          "scores": {
+            "pressure": 0.1639381067961165,
+            "control": 0.0033916695370958864,
+            "raw_chaos": 0.6863727330764471,
+            "chaos": 0.6863727330764471,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.6
+          },
+          "replicate": 6,
+          "cell": 3
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1230,
+          "scores": {
+            "pressure": 0.13940137389597645,
+            "control": 0.0030826597628703448,
+            "raw_chaos": 0.6066770148831403,
+            "chaos": 0.6066770148831403,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.522
+          },
+          "replicate": 6,
+          "cell": 4
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.3
+          },
+          "rounds": 500,
+          "decisions": 1076,
+          "scores": {
+            "pressure": 0.15197752808988765,
+            "control": 0.0026450772519353793,
+            "raw_chaos": 0.7295521986841678,
+            "chaos": 0.7295521986841678,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.5
+          },
+          "replicate": 6,
+          "cell": 5
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.29999999999999993
+          },
+          "rounds": 500,
+          "decisions": 1046,
+          "scores": {
+            "pressure": 0.15183215130023642,
+            "control": 0.0018959729983184152,
+            "raw_chaos": 0.6487417332305376,
+            "chaos": 0.6487417332305376,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.606
+          },
+          "replicate": 6,
+          "cell": 6
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.09999999999999998
+          },
+          "rounds": 500,
+          "decisions": 985,
+          "scores": {
+            "pressure": 0.1656159420289855,
+            "control": 0.004283551043149632,
+            "raw_chaos": 0.7642800974395346,
+            "chaos": 0.7642800974395346,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.508
+          },
+          "replicate": 6,
+          "cell": 7
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.7000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1231,
+          "scores": {
+            "pressure": 0.13255522088353414,
+            "control": 0.0029188979268509087,
+            "raw_chaos": 0.4528351604421218,
+            "chaos": 0.4528351604421218,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.552
+          },
+          "replicate": 7,
+          "cell": 0
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1137,
+          "scores": {
+            "pressure": 0.14293893129770993,
+            "control": 0.0016409085149823807,
+            "raw_chaos": 0.6321638864358258,
+            "chaos": 0.6321638864358258,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.54
+          },
+          "replicate": 7,
+          "cell": 1
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.5000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1108,
+          "scores": {
+            "pressure": 0.1458950276243094,
+            "control": 0.0010559833623082911,
+            "raw_chaos": 0.571031319674969,
+            "chaos": 0.571031319674969,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.604
+          },
+          "replicate": 7,
+          "cell": 2
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.1,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.3000000000000001
+          },
+          "rounds": 500,
+          "decisions": 1016,
+          "scores": {
+            "pressure": 0.16077250608272506,
+            "control": 0.003301345467358462,
+            "raw_chaos": 0.6929445295642083,
+            "chaos": 0.6929445295642083,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.57
+          },
+          "replicate": 7,
+          "cell": 3
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.1,
+            "baseline": 0.5
+          },
+          "rounds": 500,
+          "decisions": 1165,
+          "scores": {
+            "pressure": 0.13932291666666666,
+            "control": 0.005684672400171172,
+            "raw_chaos": 0.6248335685737877,
+            "chaos": 0.6248335685737877,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.53
+          },
+          "replicate": 7,
+          "cell": 4
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.1,
+            "chaos": 0.3,
+            "baseline": 0.3
+          },
+          "rounds": 500,
+          "decisions": 1087,
+          "scores": {
+            "pressure": 0.15361353711790393,
+            "control": 0.0032266052035109048,
+            "raw_chaos": 0.7436260763239501,
+            "chaos": 0.654390947165076,
+            "performance_adequacy": 0.8799999999999999,
+            "win_rate": 0.482
+          },
+          "replicate": 7,
+          "cell": 5
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.1,
+            "baseline": 0.29999999999999993
+          },
+          "rounds": 500,
+          "decisions": 1049,
+          "scores": {
+            "pressure": 0.15481373690337605,
+            "control": 0.002988581688223579,
+            "raw_chaos": 0.6710167445310595,
+            "chaos": 0.6710167445310595,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.576
+          },
+          "replicate": 7,
+          "cell": 6
+        },
+        {
+          "assigned_weights": {
+            "pressure": 0.3,
+            "control": 0.3,
+            "chaos": 0.3,
+            "baseline": 0.09999999999999998
+          },
+          "rounds": 500,
+          "decisions": 975,
+          "scores": {
+            "pressure": 0.1655959849435383,
+            "control": 0.003119335967831623,
+            "raw_chaos": 0.7141209691036108,
+            "chaos": 0.7141209691036108,
+            "performance_adequacy": 1.0,
+            "win_rate": 0.604
+          },
+          "replicate": 7,
+          "cell": 7
+        }
+      ]
+    }
+  },
+  "cross_family_axis_status": {
+    "pressure": false,
+    "control": false,
+    "chaos": true
+  },
+  "liars_dice_construct_recovery_confirmed": false,
+  "warning": "Synthetic construct recovery in engineered Liar's Dice agents is a cross-domain validation test. It is not evidence that human players possess latent PCC states, and failed axes remain failed."
+}

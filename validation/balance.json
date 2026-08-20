@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "design": {
+    "replicates": 8,
+    "rounds_per_order": 400,
+    "seed": 22001,
+    "seat_and_opener_balanced": true,
+    "minimum_pairwise_win_rate": 0.3,
+    "maximum_pairwise_win_rate": 0.7,
+    "criterion": "competitiveness only; a cyclic dominance pattern is neither required nor rewarded"
+  },
+  "families": {
+    "family-a": {
+      "pairwise": [
+        {
+          "left": "pressure",
+          "right": "control",
+          "left_win_rate": 0.48265625,
+          "right_win_rate": 0.51734375,
+          "replicate_rates": [
+            0.4825,
+            0.4925,
+            0.47625,
+            0.47625,
+            0.4925,
+            0.47125,
+            0.44625,
+            0.52375
+          ],
+          "competitive": true
+        },
+        {
+          "left": "pressure",
+          "right": "chaos",
+          "left_win_rate": 0.655625,
+          "right_win_rate": 0.344375,
+          "replicate_rates": [
+            0.6675,
+            0.64125,
+            0.64625,
+            0.6775,
+            0.63125,
+            0.67,
+            0.64625,
+            0.665
+          ],
+          "competitive": true
+        },
+        {
+          "left": "control",
+          "right": "chaos",
+          "left_win_rate": 0.73453125,
+          "right_win_rate": 0.26546875000000003,
+          "replicate_rates": [
+            0.74625,
+            0.74375,
+            0.75,
+            0.71875,
+            0.725,
+            0.72375,
+            0.73625,
+            0.7325
+          ],
+          "competitive": false
+        }
+      ],
+      "all_pairs_competitive": false
+    },
+    "family-b": {
+      "pairwise": [
+        {
+          "left": "pressure",
+          "right": "control",
+          "left_win_rate": 0.3253125,
+          "right_win_rate": 0.6746875,
+          "replicate_rates": [
+            0.32375,
+            0.335,
+            0.32625,
+            0.31875,
+            0.3175,
+            0.34,
+            0.3075,
+            0.33375
+          ],
+          "competitive": true
+        },
+        {
+          "left": "pressure",
+          "right": "chaos",
+          "left_win_rate": 0.4684375,
+          "right_win_rate": 0.5315624999999999,
+          "replicate_rates": [
+            0.5,
+            0.485,
+            0.46875,
+            0.43875,
+            0.47125,
+            0.45375,
+            0.475,
+            0.455
+          ],
+          "competitive": true
+        },
+        {
+          "left": "control",
+          "right": "chaos",
+          "left_win_rate": 0.700625,
+          "right_win_rate": 0.29937499999999995,
+          "replicate_rates": [
+            0.69125,
+            0.7025,
+            0.725,
+            0.70875,
+            0.6575,
+            0.69875,
+            0.7125,
+            0.70875
+          ],
+          "competitive": false
+        }
+      ],
+      "all_pairs_competitive": false
+    }
+  },
+  "prespecified_checks": {
+    "family_a_all_pairs_competitive": false,
+    "family_b_all_pairs_competitive": false,
+    "no_cycle_required": true,
+    "no_construct_recovery_used_for_balance": true
+  },
+  "balance_confirmed": false,
+  "warning": "Balance is an engineering precondition for later construct tests, not evidence that PCC generalized to Liar's Dice."
+}

@@ -1,0 +1,612 @@
+{
+  "schema_version": 1,
+  "design": {
+    "replicates": 10,
+    "rounds_per_order": 500,
+    "seed": 33001,
+    "fresh_relative_to_balance_seed": true,
+    "policies_modified": false,
+    "seat_and_opener_balanced": true,
+    "history_intervention": "replace only Control's public opponent profile with an empty profile; policy code and thresholds unchanged",
+    "thresholds": {
+      "minimum_history_edge_reduction": 0.03,
+      "minimum_challenge_accuracy_margin": 0.05,
+      "minimum_bid_plausibility_gap": 0.05
+    }
+  },
+  "families": {
+    "family-a": {
+      "summary": {
+        "control_win_rate": 0.7331,
+        "control_win_rate_history_muted": 0.7331,
+        "history_edge_reduction": 0.0,
+        "control_minus_chaos_challenge_accuracy": 0.24552955264242596,
+        "control_minus_chaos_bid_plausibility": 0.13466236555300293,
+        "false_final_bid_rate": 0.7692,
+        "control_challenge_accuracy": 0.8250320722310273,
+        "chaos_challenge_accuracy": 0.5795025195886013,
+        "control_mean_bid_truth_probability": 0.5754407007098555,
+        "chaos_mean_bid_truth_probability": 0.44077833515685255
+      },
+      "pathways": {
+        "history_dependence_supported": false,
+        "challenge_timing_supported": true,
+        "chaos_lower_bid_plausibility_supported": true
+      },
+      "replicates": [
+        {
+          "replicate": 0,
+          "control_win_rate": 0.731,
+          "control_win_rate_history_muted": 0.731,
+          "history_edge_reduction": 0.0,
+          "control": {
+            "decisions": 1866,
+            "challenge_rate": 0.4067524115755627,
+            "challenge_accuracy": 0.8234519104084321,
+            "mean_challenged_bid_truth_probability": 0.1203269951257069,
+            "mean_bid_truth_probability": 0.5730731484269577,
+            "bid_count": 1107,
+            "challenge_count": 759
+          },
+          "chaos": {
+            "decisions": 1607,
+            "challenge_rate": 0.14996888612321096,
+            "challenge_accuracy": 0.5601659751037344,
+            "mean_challenged_bid_truth_probability": 0.39061352731246696,
+            "mean_bid_truth_probability": 0.4328558721809495,
+            "bid_count": 1366,
+            "challenge_count": 241
+          },
+          "control_minus_chaos_challenge_accuracy": 0.2632859353046977,
+          "control_minus_chaos_bid_plausibility": 0.14021727624600816,
+          "false_final_bid_rate": 0.76
+        },
+        {
+          "replicate": 1,
+          "control_win_rate": 0.734,
+          "control_win_rate_history_muted": 0.734,
+          "history_edge_reduction": 0.0,
+          "control": {
+            "decisions": 1911,
+            "challenge_rate": 0.39822082679225534,
+            "challenge_accuracy": 0.8396846254927727,
+            "mean_challenged_bid_truth_probability": 0.11000710430827967,
+            "mean_bid_truth_probability": 0.5740097736625516,
+            "bid_count": 1150,
+            "challenge_count": 761
+          },
+          "chaos": {
+            "decisions": 1650,
+            "challenge_rate": 0.14484848484848484,
+            "challenge_accuracy": 0.602510460251046,
+            "mean_challenged_bid_truth_probability": 0.3586101210461973,
+            "mean_bid_truth_probability": 0.44852130016070096,
+            "bid_count": 1411,
+            "challenge_count": 239
+          },
+          "control_minus_chaos_challenge_accuracy": 0.23717416524172663,
+          "control_minus_chaos_bid_plausibility": 0.1254884735018506,
+          "false_final_bid_rate": 0.783
+        },
+        {
+          "replicate": 2,
+          "control_win_rate": 0.745,
+          "control_win_rate_history_muted": 0.745,
+          "history_edge_reduction": 0.0,
+          "control": {
+            "decisions": 1874,
+            "challenge_rate": 0.4103521878335112,
+            "challenge_accuracy": 0.8387516254876463,
+            "mean_challenged_bid_truth_probability": 0.11494672681639885,
+            "mean_bid_truth_probability": 0.5773920916894775,
+            "bid_count": 1105,
+            "challenge_count": 769
+          },
+          "chaos": {
+            "decisions": 1605,
+            "challenge_rate": 0.14392523364485982,
+            "challenge_accuracy": 0.5670995670995671,
+            "mean_challenged_bid_truth_probability": 0.38302224181853817,
+            "mean_bid_truth_probability": 0.43941993353939424,
+            "bid_count": 1374,
+            "challenge_count": 231
+          },
+          "control_minus_chaos_challenge_accuracy": 0.27165205838807915,
+          "control_minus_chaos_bid_plausibility": 0.13797215815008324,
+          "false_final_bid_rate": 0.776
+        },
+        {
+          "replicate": 3,
+          "control_win_rate": 0.704,
+          "control_win_rate_history_muted": 0.704,
+          "history_edge_reduction": 0.0,
+          "control": {
+            "decisions": 1903,
+            "challenge_rate": 0.38675775091960063,
+            "challenge_accuracy": 0.8057065217391305,
+            "mean_challenged_bid_truth_probability": 0.11719553755144034,
+            "mean_bid_truth_probability": 0.570572980030397,
+            "bid_count": 1167,
+            "challenge_count": 736
+          },
+          "chaos": {
+            "decisions": 1667,
+            "challenge_rate": 0.15836832633473305,
+            "challenge_accuracy": 0.5795454545454546,
+            "mean_challenged_bid_truth_probability": 0.3718897111547575,
+            "mean_bid_truth_probability": 0.45503600089754764,
+            "bid_count": 1403,
+            "challenge_count": 264
+          },
+          "control_minus_chaos_challenge_accuracy": 0.2261610671936759,
+          "control_minus_chaos_bid_plausibility": 0.11553697913284938,
+          "false_final_bid_rate": 0.746
+        },
+        {
+          "replicate": 4,
+          "control_win_rate": 0.748,
+          "control_win_rate_history_muted": 0.748,
+          "history_edge_reduction": 0.0,
+          "control": {
+            "decisions": 1915,
+            "challenge_rate": 0.4114882506527415,
+            "challenge_accuracy": 0.8362944162436549,
+            "mean_challenged_bid_truth_probability": 0.11567252355288171,
+            "mean_bid_truth_probability": 0.5806494900697801,
+            "bid_count": 1127,
+            "challenge_count": 788
+          },
+          "chaos": {
+            "decisions": 1627,
+            "challenge_rate": 0.13030116779348494,
+            "challenge_accuracy": 0.5801886792452831,
+            "mean_challenged_bid_truth_probability": 0.3875385802469136,
+            "mean_bid_truth_probability": 0.45053530660617436,
+            "bid_count": 1415,
+            "challenge_count": 212
+          },
+          "control_minus_chaos_challenge_accuracy": 0.2561057369983718,
+          "control_minus_chaos_bid_plausibility": 0.1301141834636057,
+          "false_final_bid_rate": 0.782
+        },
+        {
+          "replicate": 5,
+          "control_win_rate": 0.725,
+          "control_win_rate_history_muted": 0.725,
+          "history_edge_reduction": 0.0,
+          "control": {
+            "decisions": 1922,
+            "challenge_rate": 0.4094693028095734,
+            "challenge_accuracy": 0.8132147395171537,
+            "mean_challenged_bid_truth_probability": 0.11539758733744335,
+            "mean_bid_truth_probability": 0.5800644930294956,
+            "bid_count": 1135,
+            "challenge_count": 787
+          },
+          "chaos": {
+            "decisions": 1635,
+            "challenge_rate": 0.13027522935779817,
+            "challenge_accuracy": 0.6009389671361502,
+            "mean_challenged_bid_truth_probability": 0.36212784250082114,
+            "mean_bid_truth_probability": 0.4261969643694328,
+            "bid_count": 1422,
+            "challenge_count": 213
+          },
+          "control_minus_chaos_challenge_accuracy": 0.21227577238100348,
+          "control_minus_chaos_bid_plausibility": 0.1538675286600628,
+          "false_final_bid_rate": 0.768
+        },
+        {
+          "replicate": 6,
+          "control_win_rate": 0.743,
+          "control_win_rate_history_muted": 0.743,
+          "history_edge_reduction": 0.0,
+          "control": {
+            "decisions": 1916,
+            "challenge_rate": 0.40292275574112735,
+            "challenge_accuracy": 0.8316062176165803,
+            "mean_challenged_bid_truth_probability": 0.11774188282266147,
+            "mean_bid_truth_probability": 0.5756397666119889,
+            "bid_count": 1144,
+            "challenge_count": 772
+          },
+          "chaos": {
+            "decisions": 1644,
+            "challenge_rate": 0.1386861313868613,
+            "challenge_accuracy": 0.5570175438596491,
+            "mean_challenged_bid_truth_probability": 0.3631721085120208,
+            "mean_bid_truth_probability": 0.4409944730708424,
+            "bid_count": 1416,
+            "challenge_count": 228
+          },
+          "control_minus_chaos_challenge_accuracy": 0.2745886737569312,
+          "control_minus_chaos_bid_plausibility": 0.13464529354114652,
+          "false_final_bid_rate": 0.769
+        },
+        {
+          "replicate": 7,
+          "control_win_rate": 0.733,
+          "control_win_rate_history_muted": 0.733,
+          "history_edge_reduction": 0.0,
+          "control": {
+            "decisions": 1934,
+            "challenge_rate": 0.4079627714581179,
+            "challenge_accuracy": 0.8250950570342205,
+            "mean_challenged_bid_truth_probability": 0.11867036202517123,
+            "mean_bid_truth_probability": 0.5735534934497818,
+            "bid_count": 1145,
+            "challenge_count": 789
+          },
+          "chaos": {
+            "decisions": 1645,
+            "challenge_rate": 0.12826747720364742,
+            "challenge_accuracy": 0.6113744075829384,
+            "mean_challenged_bid_truth_probability": 0.36095752150254523,
+            "mean_bid_truth_probability": 0.4453876965063623,
+            "bid_count": 1434,
+            "challenge_count": 211
+          },
+          "control_minus_chaos_challenge_accuracy": 0.2137206494512821,
+          "control_minus_chaos_bid_plausibility": 0.1281657969434195,
+          "false_final_bid_rate": 0.78
+        },
+        {
+          "replicate": 8,
+          "control_win_rate": 0.749,
+          "control_win_rate_history_muted": 0.749,
+          "history_edge_reduction": 0.0,
+          "control": {
+            "decisions": 1941,
+            "challenge_rate": 0.4095826893353941,
+            "challenge_accuracy": 0.8276729559748428,
+            "mean_challenged_bid_truth_probability": 0.11345552837953259,
+            "mean_bid_truth_probability": 0.5732242538010185,
+            "bid_count": 1146,
+            "challenge_count": 795
+          },
+          "chaos": {
+            "decisions": 1646,
+            "challenge_rate": 0.12454434993924667,
+            "challenge_accuracy": 0.5560975609756098,
+            "mean_challenged_bid_truth_probability": 0.36460215296597415,
+            "mean_bid_truth_probability": 0.4279927312423072,
+            "bid_count": 1441,
+            "challenge_count": 205
+          },
+          "control_minus_chaos_challenge_accuracy": 0.271575394999233,
+          "control_minus_chaos_bid_plausibility": 0.1452315225587113,
+          "false_final_bid_rate": 0.772
+        },
+        {
+          "replicate": 9,
+          "control_win_rate": 0.719,
+          "control_win_rate_history_muted": 0.719,
+          "history_edge_reduction": 0.0,
+          "control": {
+            "decisions": 1907,
+            "challenge_rate": 0.4032511798636602,
+            "challenge_accuracy": 0.8088426527958388,
+            "mean_challenged_bid_truth_probability": 0.1170576867504696,
+            "mean_bid_truth_probability": 0.5762275163271063,
+            "bid_count": 1138,
+            "challenge_count": 769
+          },
+          "chaos": {
+            "decisions": 1638,
+            "challenge_rate": 0.14102564102564102,
+            "challenge_accuracy": 0.5800865800865801,
+            "mean_challenged_bid_truth_probability": 0.3985406311795201,
+            "mean_bid_truth_probability": 0.44084307299481434,
+            "bid_count": 1407,
+            "challenge_count": 231
+          },
+          "control_minus_chaos_challenge_accuracy": 0.22875607270925868,
+          "control_minus_chaos_bid_plausibility": 0.135384443332292,
+          "false_final_bid_rate": 0.756
+        }
+      ]
+    },
+    "family-b": {
+      "summary": {
+        "control_win_rate": 0.696,
+        "control_win_rate_history_muted": 0.5923999999999999,
+        "history_edge_reduction": 0.1036,
+        "control_minus_chaos_challenge_accuracy": 0.3935081412448927,
+        "control_minus_chaos_bid_plausibility": 0.2462758518204559,
+        "false_final_bid_rate": 0.519,
+        "control_challenge_accuracy": 0.6903249822128792,
+        "chaos_challenge_accuracy": 0.2968168409679865,
+        "control_mean_bid_truth_probability": 0.8210904497930733,
+        "chaos_mean_bid_truth_probability": 0.5748145979726174
+      },
+      "pathways": {
+        "history_dependence_supported": true,
+        "challenge_timing_supported": true,
+        "chaos_lower_bid_plausibility_supported": true
+      },
+      "replicates": [
+        {
+          "replicate": 0,
+          "control_win_rate": 0.672,
+          "control_win_rate_history_muted": 0.626,
+          "history_edge_reduction": 0.04600000000000004,
+          "control": {
+            "decisions": 1591,
+            "challenge_rate": 0.3519798868636078,
+            "challenge_accuracy": 0.6660714285714285,
+            "mean_challenged_bid_truth_probability": 0.12420543062904175,
+            "mean_bid_truth_probability": 0.8209816670857731,
+            "bid_count": 1031,
+            "challenge_count": 560
+          },
+          "chaos": {
+            "decisions": 1531,
+            "challenge_rate": 0.2873938602220771,
+            "challenge_accuracy": 0.32045454545454544,
+            "mean_challenged_bid_truth_probability": 0.1955360900673401,
+            "mean_bid_truth_probability": 0.5775533687521925,
+            "bid_count": 1091,
+            "challenge_count": 440
+          },
+          "control_minus_chaos_challenge_accuracy": 0.3456168831168831,
+          "control_minus_chaos_bid_plausibility": 0.2434282983335806,
+          "false_final_bid_rate": 0.514
+        },
+        {
+          "replicate": 1,
+          "control_win_rate": 0.688,
+          "control_win_rate_history_muted": 0.568,
+          "history_edge_reduction": 0.12,
+          "control": {
+            "decisions": 1558,
+            "challenge_rate": 0.34210526315789475,
+            "challenge_accuracy": 0.6772983114446529,
+            "mean_challenged_bid_truth_probability": 0.12272740871995616,
+            "mean_bid_truth_probability": 0.8227504265783399,
+            "bid_count": 1025,
+            "challenge_count": 533
+          },
+          "chaos": {
+            "decisions": 1525,
+            "challenge_rate": 0.3062295081967213,
+            "challenge_accuracy": 0.29978586723768735,
+            "mean_challenged_bid_truth_probability": 0.19629304685365834,
+            "mean_bid_truth_probability": 0.5804367760430038,
+            "bid_count": 1058,
+            "challenge_count": 467
+          },
+          "control_minus_chaos_challenge_accuracy": 0.37751244420696556,
+          "control_minus_chaos_bid_plausibility": 0.24231365053533604,
+          "false_final_bid_rate": 0.501
+        },
+        {
+          "replicate": 2,
+          "control_win_rate": 0.672,
+          "control_win_rate_history_muted": 0.598,
+          "history_edge_reduction": 0.07400000000000007,
+          "control": {
+            "decisions": 1631,
+            "challenge_rate": 0.34334763948497854,
+            "challenge_accuracy": 0.6910714285714286,
+            "mean_challenged_bid_truth_probability": 0.11804499191651971,
+            "mean_bid_truth_probability": 0.8031122599931605,
+            "bid_count": 1071,
+            "challenge_count": 560
+          },
+          "chaos": {
+            "decisions": 1571,
+            "challenge_rate": 0.2800763844684914,
+            "challenge_accuracy": 0.3522727272727273,
+            "mean_challenged_bid_truth_probability": 0.20079703282828285,
+            "mean_bid_truth_probability": 0.5820757514563389,
+            "bid_count": 1131,
+            "challenge_count": 440
+          },
+          "control_minus_chaos_challenge_accuracy": 0.33879870129870127,
+          "control_minus_chaos_bid_plausibility": 0.22103650853682155,
+          "false_final_bid_rate": 0.542
+        },
+        {
+          "replicate": 3,
+          "control_win_rate": 0.704,
+          "control_win_rate_history_muted": 0.582,
+          "history_edge_reduction": 0.122,
+          "control": {
+            "decisions": 1580,
+            "challenge_rate": 0.3531645569620253,
+            "challenge_accuracy": 0.6720430107526881,
+            "mean_challenged_bid_truth_probability": 0.12174603042907504,
+            "mean_bid_truth_probability": 0.8289338513606017,
+            "bid_count": 1022,
+            "challenge_count": 558
+          },
+          "chaos": {
+            "decisions": 1522,
+            "challenge_rate": 0.290407358738502,
+            "challenge_accuracy": 0.25565610859728505,
+            "mean_challenged_bid_truth_probability": 0.2189973092750871,
+            "mean_bid_truth_probability": 0.5753017356348118,
+            "bid_count": 1080,
+            "challenge_count": 442
+          },
+          "control_minus_chaos_challenge_accuracy": 0.4163869021554031,
+          "control_minus_chaos_bid_plausibility": 0.2536321157257899,
+          "false_final_bid_rate": 0.488
+        },
+        {
+          "replicate": 4,
+          "control_win_rate": 0.705,
+          "control_win_rate_history_muted": 0.594,
+          "history_edge_reduction": 0.11099999999999999,
+          "control": {
+            "decisions": 1593,
+            "challenge_rate": 0.36095417451349654,
+            "challenge_accuracy": 0.6956521739130435,
+            "mean_challenged_bid_truth_probability": 0.12507268742172126,
+            "mean_bid_truth_probability": 0.8245918881935854,
+            "bid_count": 1018,
+            "challenge_count": 575
+          },
+          "chaos": {
+            "decisions": 1518,
+            "challenge_rate": 0.27997364953886694,
+            "challenge_accuracy": 0.2823529411764706,
+            "mean_challenged_bid_truth_probability": 0.21587539336722347,
+            "mean_bid_truth_probability": 0.559612776215272,
+            "bid_count": 1093,
+            "challenge_count": 425
+          },
+          "control_minus_chaos_challenge_accuracy": 0.4132992327365729,
+          "control_minus_chaos_bid_plausibility": 0.2649791119783135,
+          "false_final_bid_rate": 0.52
+        },
+        {
+          "replicate": 5,
+          "control_win_rate": 0.696,
+          "control_win_rate_history_muted": 0.576,
+          "history_edge_reduction": 0.12,
+          "control": {
+            "decisions": 1630,
+            "challenge_rate": 0.34171779141104297,
+            "challenge_accuracy": 0.6858168761220825,
+            "mean_challenged_bid_truth_probability": 0.1138313532962446,
+            "mean_bid_truth_probability": 0.8126658746869475,
+            "bid_count": 1073,
+            "challenge_count": 557
+          },
+          "chaos": {
+            "decisions": 1573,
+            "challenge_rate": 0.28162746344564527,
+            "challenge_accuracy": 0.291196388261851,
+            "mean_challenged_bid_truth_probability": 0.19718831572982568,
+            "mean_bid_truth_probability": 0.5794269410757857,
+            "bid_count": 1130,
+            "challenge_count": 443
+          },
+          "control_minus_chaos_challenge_accuracy": 0.3946204878602315,
+          "control_minus_chaos_bid_plausibility": 0.23323893361116177,
+          "false_final_bid_rate": 0.511
+        },
+        {
+          "replicate": 6,
+          "control_win_rate": 0.693,
+          "control_win_rate_history_muted": 0.585,
+          "history_edge_reduction": 0.10799999999999998,
+          "control": {
+            "decisions": 1610,
+            "challenge_rate": 0.3565217391304348,
+            "challenge_accuracy": 0.6742160278745645,
+            "mean_challenged_bid_truth_probability": 0.11903955349077301,
+            "mean_bid_truth_probability": 0.8211100485406041,
+            "bid_count": 1036,
+            "challenge_count": 574
+          },
+          "chaos": {
+            "decisions": 1536,
+            "challenge_rate": 0.27734375,
+            "challenge_accuracy": 0.28169014084507044,
+            "mean_challenged_bid_truth_probability": 0.19582977115091096,
+            "mean_bid_truth_probability": 0.5715536137989842,
+            "bid_count": 1110,
+            "challenge_count": 426
+          },
+          "control_minus_chaos_challenge_accuracy": 0.39252588702949404,
+          "control_minus_chaos_bid_plausibility": 0.24955643474161993,
+          "false_final_bid_rate": 0.507
+        },
+        {
+          "replicate": 7,
+          "control_win_rate": 0.714,
+          "control_win_rate_history_muted": 0.61,
+          "history_edge_reduction": 0.10399999999999998,
+          "control": {
+            "decisions": 1598,
+            "challenge_rate": 0.3617021276595745,
+            "challenge_accuracy": 0.7145328719723183,
+            "mean_challenged_bid_truth_probability": 0.11695377134150685,
+            "mean_bid_truth_probability": 0.8283336611393529,
+            "bid_count": 1020,
+            "challenge_count": 578
+          },
+          "chaos": {
+            "decisions": 1520,
+            "challenge_rate": 0.2776315789473684,
+            "challenge_accuracy": 0.28672985781990523,
+            "mean_challenged_bid_truth_probability": 0.1965648343182572,
+            "mean_bid_truth_probability": 0.5769964047988486,
+            "bid_count": 1098,
+            "challenge_count": 422
+          },
+          "control_minus_chaos_challenge_accuracy": 0.42780301415241306,
+          "control_minus_chaos_bid_plausibility": 0.2513372563405043,
+          "false_final_bid_rate": 0.534
+        },
+        {
+          "replicate": 8,
+          "control_win_rate": 0.713,
+          "control_win_rate_history_muted": 0.609,
+          "history_edge_reduction": 0.10399999999999998,
+          "control": {
+            "decisions": 1594,
+            "challenge_rate": 0.35382685069008785,
+            "challenge_accuracy": 0.7198581560283688,
+            "mean_challenged_bid_truth_probability": 0.11713460037066224,
+            "mean_bid_truth_probability": 0.8272379040313237,
+            "bid_count": 1030,
+            "challenge_count": 564
+          },
+          "chaos": {
+            "decisions": 1530,
+            "challenge_rate": 0.2849673202614379,
+            "challenge_accuracy": 0.2958715596330275,
+            "mean_challenged_bid_truth_probability": 0.21046173594593576,
+            "mean_bid_truth_probability": 0.5787970392187841,
+            "bid_count": 1094,
+            "challenge_count": 436
+          },
+          "control_minus_chaos_challenge_accuracy": 0.42398659639534125,
+          "control_minus_chaos_bid_plausibility": 0.24844086481253957,
+          "false_final_bid_rate": 0.535
+        },
+        {
+          "replicate": 9,
+          "control_win_rate": 0.703,
+          "control_win_rate_history_muted": 0.576,
+          "history_edge_reduction": 0.127,
+          "control": {
+            "decisions": 1604,
+            "challenge_rate": 0.3634663341645885,
+            "challenge_accuracy": 0.7066895368782161,
+            "mean_challenged_bid_truth_probability": 0.11256057253174655,
+            "mean_bid_truth_probability": 0.8211869163210441,
+            "bid_count": 1021,
+            "challenge_count": 583
+          },
+          "chaos": {
+            "decisions": 1521,
+            "challenge_rate": 0.27416173570019725,
+            "challenge_accuracy": 0.302158273381295,
+            "mean_challenged_bid_truth_probability": 0.19570516426365084,
+            "mean_bid_truth_probability": 0.5663915727321525,
+            "bid_count": 1104,
+            "challenge_count": 417
+          },
+          "control_minus_chaos_challenge_accuracy": 0.40453126349692115,
+          "control_minus_chaos_bid_plausibility": 0.25479534358889167,
+          "false_final_bid_rate": 0.538
+        }
+      ]
+    }
+  },
+  "cross_family_pathway_counts": {
+    "history_dependence_supported": 1,
+    "challenge_timing_supported": 2,
+    "chaos_lower_bid_plausibility_supported": 2
+  },
+  "cross_family_supported_pathways": [
+    "challenge_timing_supported",
+    "chaos_lower_bid_plausibility_supported"
+  ],
+  "mechanism_decomposition_supported": true,
+  "warning": "This diagnoses engineered synthetic Liar's Dice policies. It is not evidence that human players possess PCC states or that poker mechanisms transfer unchanged."
+}
